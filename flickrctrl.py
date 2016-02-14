@@ -622,7 +622,7 @@ def user_in_list(user, user_list):
 
 def usage(ret, msg):
     error(msg)
-    print("flickrctrl [-h|--help] [-v|--verbose]  --filter-user id | --filter-group-member groupid | --delete-user id | print | filter-groups | follow | unfollow | mark-friends | repair | groups")
+    print("flickrctrl [-h|--help] [-v|--verbose]  --filter-user id | --filter-group-member groupid | --delete-user id | --print | filter-groups | follow | unfollow | mark-friends | repair | groups")
     sys.exit(ret)
 
 
