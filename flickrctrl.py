@@ -592,6 +592,9 @@ class FollowList:
                 self.print_entry("Follows but don't favs last four: ", entry) 
                 if user.unfollow():  self._update(user, 'obsolete', reason = 'FollowNoLastFavs')
      
+            if (datetime.today() - d).days >= 30:
+                if user.unfollow():  self._update(user, 'obsolete', reason = 'Older30Days')
+
 
     def repair(self):
         new_list = []
